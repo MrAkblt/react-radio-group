@@ -1,5 +1,6 @@
 # react-radio-group
 Use it however you want, the only condition is that the element has a value attribute.
+If you want to do anything when selected your custom component, you can use checked prop.
 
 ## Usage
 ```js
