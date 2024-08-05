@@ -10,3 +10,17 @@ If you want to do anything when selected your custom component, you can use `che
   <button value="test3">Test3</button>
 </RadioGroup>
 ```
+
+CustomComponent Example
+```js
+export const CustomComponent = ({ children, checked, className="", ...restProps }: ButtonProps) => {
+  return (
+    <button
+      className={`h-8 py-2 px-4 w-fit rounded-full font-medium ${checked ? 'text-neutral-800'} ${className}`}
+      {...restProps}
+    >
+      {children}
+    </button>
+  );
+}
+```
